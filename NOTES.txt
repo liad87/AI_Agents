@@ -1,0 +1,27 @@
+NOTES:
+AI conspets:
+
+    model streaming - what is chunk ? part of the generated LLM output ? what is flush parameter
+    model batch - collection of different requests that significantly improve performance and reduce cost
+    Tool execution loops - foward and back request of LLM model and the tool selected
+        you can bind bind set of tools and 2 ways : 
+        1.bind the tool to the model(bind_tools command) . 
+        2.using the tool argument after creating an agent
+    
+    messages: messages conatians 3 parts : role , conetnt and metadata
+        possiable roles:
+            user prompt - user input
+            system prompt - tells the model how to behave
+            AI messages - response of the AI including tool calls and meta data ,
+            tool messages - output of tool calls
+    
+
+    pydantic - parsing free speach message to a stracture fileds, can also include nested stracture such as lists in lists
+    Type dict - alternative for pydantic using python built in typing when you dont need a run time validation
+    data class
+
+    Middleware - provide a way to monitor and control what happens inside the agent such as
+        Tracking agent behaveior with logging , analytics and debugging
+        Transformation prompts , tool selection and output formating
+        Adding retries,fallbacks and early termination logic 
+        Applying rate limits , guardarails and PII detection
