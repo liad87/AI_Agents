@@ -25,3 +25,16 @@ AI conspets:
         Transformation prompts , tool selection and output formating
         Adding retries,fallbacks and early termination logic 
         Applying rate limits , guardarails and PII detection
+
+
+RAG
+    figure out chank splitting techniques ?
+
+        ___________________________
+evalutations mertrics
+    *corectness
+    *size of the answer
+    ....
+    in RAG - relevance docs retrived
+            is the infomation contained in docs
+            corectness
